@@ -3,6 +3,8 @@ Laravel ElasticSearch
 
 ElasticSearch service provider for Laravel.
 
+![StyleCI build status](https://github.styleci.io/repos/318086568/shield) 
+
 ## Installing
 
 ```shell
