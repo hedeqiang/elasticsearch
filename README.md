@@ -19,12 +19,22 @@ $ composer require hedeqiang/elasticsearch -vvv
 .
 .
 'elasticsearch' => [
-    'hosts' => explode(',', env('ES_HOSTS')),
+    [
+        'host'    => env('ES_HOST','localhost'),
+        'port'    => env('ES_PORT','9200'),
+        'scheme'  => env('ES_SCHEME','http'),
+        'user'    => env('ES_USERNAME',null),
+        'pass'    => env('ES_PASSWORD','null'),
+    ],
 ],
 ```
 `.env` 配置文件
 ```
 ES_HOSTS=localhost
+ES_PORT=9200
+ES_SCHEME=http
+ES_USERNAME=
+ES_PASSWORD=
 ```
 
 ## 使用
