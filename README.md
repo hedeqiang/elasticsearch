@@ -30,7 +30,7 @@ $ composer require hedeqiang/elasticsearch -vvv
 ```
 `.env` 配置文件
 ```
-ES_HOSTS=localhost
+ES_HOST=localhost
 ES_PORT=9200
 ES_SCHEME=http
 ES_USERNAME=
